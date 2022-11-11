@@ -1,0 +1,73 @@
+:root{
+    --light:#f1f8ff;
+    --dark:rgb(40, 40, 87);
+}
+
+body{
+    background-color: azure;
+}
+.logo{
+   
+  
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.btn{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.carousel-caption{
+   background: rgba(21, 40, 86, 0.7);
+   z-index: 1;
+}
+
+.title{
+    position: relative;
+    display: inline-block;
+}
+.title::before{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left:-55px;
+    margin-top: -1px;
+    background: rgb(40, 40, 87);
+}
+.title::after{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right:-55px;
+    margin-top: -1px;
+    background: rgb(40, 40, 87);
+}
+.text-start::before,
+.text-end::after{
+display: none;
+}
+.update{
+    position: relative;
+    z-index: 1;
+}
+.footer .social{
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid whitesmoke;
+    border-radius: 35px;
+}
+.footer .btn-link{
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: aliceblue;
+}
